@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Weather</title>
+</head>
+<body>
+    <div class="sticky-nav">
+        <div class="left">
+            <img src="#" class="logo">
+            <button class="premium-btn"><i class="fa-solid fa-crown"></i>Premium</button>
+            <button class="premium-btn"><i class="fa-solid fa-user"></i>Sign in</button>
+        </div>
+        <div class="search">
+            <input type="text" id="search-box"> <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="top-3">
+            <h2>Top Cities</h2>
+             <div class="city-box">
+                <div class="name">
+                    <h3 id="first-city">Kathmandu</h3>
+                </div>
+                <div class="info-box">
+                    <div class="today-tommorow">
+                        <p>Today</p>
+                        <p>Tomorrow</p>
+                    </div>
+                    <div class="actual-temp">
+                        <p id="first-temp">25 C</p>
+                        <p>30 C</p>
+                    </div>
+                </div>
+             </div>
+             <div class="city-box">
+                <div class="name">
+                    <h3>Kathmandu</h3>
+                </div>
+                <div class="info-box">
+                    <div class="today-tommorow">
+                        <p>Today</p>
+                        <p>Tomorrow</p>
+                    </div>
+                    <div class="actual-temp">
+                        <p>25 C</p>
+                        <p>30 C</p>
+                    </div>
+                </div>
+             </div>
+             <div class="city-box">
+                <div class="name">
+                    <h3>Kathmandu</h3>
+                </div>
+                <div class="info-box">
+                    <div class="today-tommorow">
+                        <p>Today</p>
+                        <p>Tomorrow</p>
+                    </div>
+                    <div class="actual-temp">
+                        <p>25 C</p>
+                        <p>30 C</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="aftersearch-box"></div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+<script src="script.js"></script>
+
+</html>

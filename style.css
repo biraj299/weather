@@ -1,0 +1,81 @@
+body{
+    margin: 0; 
+   overflow: hidden;
+   
+ 
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0px;
+    height:66px;
+    /* width: 100%; */
+}
+
+.main-content{
+    background-color: rgb(35, 39, 35) ;
+    display: flex;
+    height: 100vh;
+
+}
+
+.top-3{
+    background-color:rgb(255, 255, 255);
+    width: 30%;
+    padding: 0 20px;
+}
+
+.aftersearch-box{
+    background-color: yellow;
+    /* width: 70%; */
+    flex: 1;
+    overflow: auto;
+}
+h2{
+    text-align: center;
+}
+.city-box{
+   background-color: rgba(197, 193, 193, 0.699);
+   border-radius: 10px; 
+   width: 80%;
+    padding: 8px 10px;
+    position: relative;
+    left: 20px;
+    margin-bottom: 10px;
+}
+.name{
+
+     display: flex;
+     justify-content: center;
+}
+.info-box{
+     
+     display: flex;
+     
+}
+
+.today-tommorow{
+ 
+    width: 50%;
+    text-align: center;
+}
+
+.actual-temp{
+   
+    width: 50%;
+}
+
+.actual-temp p{
+    color: blue;
+
+text-align: center;    
+}
