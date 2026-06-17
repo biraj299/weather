@@ -21,13 +21,18 @@
         <div class="search">
             <input type="text" id="search-box"> <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
         </div>
-    </div>
+    </div> 
     <div class="main-content">
         <div class="top-3">
             <h2>Top Cities</h2>
+            <div class="live-div">
+                <div class="red-circle"></div>
+                 <span>Live Temperature</span>
+            </div>
+            
              <div class="city-box">
                 <div class="name">
-                    <h3 id="first-city">Kathmandu</h3>
+                    <h3 id="city1">Kathmandu</h3>
                 </div>
                 <div class="info-box">
                     <div class="today-tommorow">
@@ -35,14 +40,14 @@
                         <p>Tomorrow</p>
                     </div>
                     <div class="actual-temp">
-                        <p id="first-temp">25 C</p>
-                        <p>30 C</p>
+                        <p id="curr_temperature1"></p>
+                        <p></p>
                     </div>
                 </div>
              </div>
              <div class="city-box">
                 <div class="name">
-                    <h3>Kathmandu</h3>
+                    <h3 id="city2">Paris</h3>
                 </div>
                 <div class="info-box">
                     <div class="today-tommorow">
@@ -50,14 +55,14 @@
                         <p>Tomorrow</p>
                     </div>
                     <div class="actual-temp">
-                        <p>25 C</p>
-                        <p>30 C</p>
+                        <p id="curr_temperature2"></p>
+                        <p></p>
                     </div>
                 </div>
              </div>
              <div class="city-box">
                 <div class="name">
-                    <h3>Kathmandu</h3>
+                    <h3 id="city3">London</h3>
                 </div>
                 <div class="info-box">
                     <div class="today-tommorow">
@@ -65,13 +70,17 @@
                         <p>Tomorrow</p>
                     </div>
                     <div class="actual-temp">
-                        <p>25 C</p>
-                        <p>30 C</p>
+                        <p id="curr_temperature3"></p>
+                        <p></p>
                     </div>
                 </div>
              </div>
         </div>
-        <div class="aftersearch-box"></div>
+        <div class="aftersearch-box">
+            <div class="card">
+
+            </div>
+        </div>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
