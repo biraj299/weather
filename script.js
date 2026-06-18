@@ -6,9 +6,12 @@ let city_input = document.querySelector("#search-box");
 let  city1 = document.querySelector("#city1");
 let  city2 = document.querySelector("#city2");
 let  city3 = document.querySelector("#city3");
+let cityAfterSearch = document.querySelector("#aftersearch-city");
 let curr_temp1 = document.querySelector("#curr_temperature1");
 let curr_temp2 = document.querySelector("#curr_temperature2");
 let curr_temp3 = document.querySelector("#curr_temperature3");
+let curr_tempAfterSearch = document.querySelector("#curr_temperatureAfterSearch");
+
 // let tomorow_url = `https://api.openweathermap.org/data/2.5/forecast?q==${city_input.value}&appid=64e9138c1522750f0d3147502cd153c0&units=metric`;
 
 let btn = document.querySelector("#search-icon");
@@ -17,9 +20,8 @@ btn.addEventListener("click", async()=>{
     console.log("hi clicked");
     let city = city_input.value;
      let temp = await getweather(city);
-     display_city.innerText = city;
-
-    celius.innerText = temp;
+     cityAfterSearch.innerText = city.charAt(0).toUpperCase()+city.slice(1);
+    curr_tempAfterSearch.innerText = temp;
     
 })
 
